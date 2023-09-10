@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Showcase</h1>
+        
+        <div class="data-card">
+          <h2 data-testid="name-title"> Slack Name</h2>
+          <span  id="data-value" data-testid="name-value"></span>
+          <p class="data-description" data-testid="slackUserName" >This is my name.</p>
+          <img src="" data-testid="slackDisplayImage" alt="Emmi_Tech">
+      
+        </div>
+        
+        <div class="data-card">
+         
+          <h2 data-testid="age-title">Age</h2>
+          <span class="data-value" data-testid="age-value"></span>
+          <h3 data-testid="myTrack"></h3>
+              <p class="data-time" data-testid="currentUTCTime"> </p>
+          <p class="data-time" data-testid="currentDayOfTheWeek"> </p>
+        </div>
+        
+        <div class="data-card">
+          <h2 data-testid="location-title">Location</h2>
+          <span class="data-value" data-testid="location-value"></span>
+          <p class="data-description"  data-testid="githubURL"></p>
+          <p class="data-time" data-testid="location-time"></p>
+        </div>
+      </div>
+      
+      <script>
+document.querySelector('[data-testid="name-value"]').textContent = ' Adewale Emmanuel';
+document.querySelector('[data-testid="slackUserName"]').textContent = 'Emmi_Tech'
+document.querySelector('[data-testid="myTrack"]').textContent = 'FRONT-END TRACK'
+document.querySelector('[data-testid="currentUTCTime"]').textContent = 'sun, 11:30:24 pm';
+document.querySelector('[data-testid="slackDisplayImage"]').src='/tech_emmi.jpg'
+ document.querySelector('[data-testid="age-value"]').textContent = '25';
+ document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = 'Sunday';
+ document.querySelector('[data-testid="githubURL"]').textContent = 'https://github.com/EmmyTech21/Frontend-Page-Creation.git'
+document.querySelector('[data-testid="location-value"]').textContent = 'Nigeria';
+document.querySelector('[data-testid="location-time"]').textContent = ' 2023-09-10 10:10:00';
+ 
+
+      </script>
+</body>
+
+</html>
